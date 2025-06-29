@@ -26,7 +26,7 @@ todoForm.addEventListener("submit", (e) => {
 renderTasks = () => {
   taskList.innerHTML = "";
   tasks.forEach((task, index) => {
-    totalTodo.textContent = `Total Todos ${index}`;
+    totalTodo.textContent = `Total Todos ${index + 1}`;
     const li = document.createElement("li");
 
     const taskContent = document.createElement("div");
